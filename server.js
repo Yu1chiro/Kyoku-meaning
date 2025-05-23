@@ -24,10 +24,11 @@ app.use(express.json());
 
 // Konfigurasi CORS yang lebih baik
 app.use(cors({
-    origin: '*', // Untuk development, bisa disesuaikan dengan domain production nanti
+    origin: 'https://kyokumeaning.vercel.app', // Untuk development, bisa disesuaikan dengan domain production nanti
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 

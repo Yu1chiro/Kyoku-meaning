@@ -12,7 +12,7 @@
         const charCount = document.getElementById('charCount');
 
         // API Endpoint
-        const BACKEND_URL = 'http://localhost:3000/api/find-meaning';
+        const BACKEND_URL = '/api/find-meaning';
 
         // Character counter for lyrics input
         lyricsInput.addEventListener('input', () => {
